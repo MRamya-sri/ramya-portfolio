@@ -1,0 +1,300 @@
+{
+  "personal": {
+  "name": "Ramya Sri",
+  "title": "AI Engineer",
+  "tagline": "I don't predict the future — I build the agents that do",
+  "description": "AI geek who speaks fluent Python and dreams in neural networks. Currently teaching machines to think, one multi-agent system at a time. When London's transport gets smarter, you'll know who to thank.",
+  "email": "ramyasrimuthuluri@gmail.com",
+  "phone": "+44 7887187467",
+  "location": "London, UK",
+  "resume": "https://drive.google.com/file/d/1MCJUqsGQoc_XsfmnwuV7sG5hS4gqAkve/view?usp=sharing",
+  "links": {
+    "github": "https://github.com/MRamya-sri",
+    "linkedin": "https://www.linkedin.com/in/ramya-sri-muthuluri",
+    "portfolio": "https://your-portfolio.vercel.app"
+  }
+  },
+  "skills": {
+    "ai_ml": ["Multi-Agent Systems", "LSTM Networks", "Reinforcement Learning", "NLP", "LLM Integration", "Neural Networks"],
+    "llms": ["Llama", "Gemini", "DeepSeek", "Mistral", "Qwen", "Ollama"],
+    "automation": ["n8n Workflows", "Flask API", "Real-Time Pipelines", "API Integration"],
+    "technical": ["Python", "JavaScript", "SQL", "React.js", "React Native"],
+    "tools": ["Supabase", "ThingsBoard", "Docker", "Git", "Jupyter", "Power BI"]
+  },
+  "experience": [
+    {
+      "id": "bridgethings",
+      "role": "Software Engineer",
+      "company": "BridgeThings IoT",
+      "location": "Hyderabad, India",
+      "period": "Aug 2024 - May 2025",
+      "highlights": [
+        "Engineered intelligent WhatsApp chatbot using n8n + multiple LLMs (Ollama, Qwen, Mistral, Gemini, DeepSeek) with memory retention",
+        "Designed multi-agent architecture handling customer queries, invoice generation, analytical reports — reducing response time by 70%",
+        "Built real-time IoT dashboards for Smart Water, Energy, and Light management using ThingsBoard"
+      ],
+      "video": "/videos/n8n-workflow-demo.mp4",
+      "videoTitle": "Multi-Agent n8n Workflow Demo"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ontimeLondon",
+      "title": "OnTimeLondon AI",
+      "subtitle": "Multi-Agent Travel Intelligence System",
+      "description": "A groundbreaking 5-agent AI pipeline that's transforming how Londoners navigate the city. This system predicts transport delays in real-time and delivers personalized route recommendations to commuters across the entire TfL network.",
+      "longDescription": "Built to tackle London's complex transport challenges, OnTimeLondon AI combines cutting-edge machine learning with real-time data processing. The system ingests live TfL data, detects anomalies using Z-Score analysis, predicts delays with LSTM neural networks, optimizes routes using Dijkstra's algorithm, and personalizes recommendations through reinforcement learning — all orchestrated through a sophisticated n8n multi-agent workflow.",
+      "tech": ["Python", "n8n", "LSTM", "Flask", "Supabase", "Llama", "TfL API", "React Native", "Docker"],
+      "highlights": [
+        "LSTM model trained on 47,774 TfL records achieving ~97% accuracy",
+        "Real-time Z-Score anomaly detection on live transport data",
+        "Dijkstra's algorithm optimizing routes across 471 stations & 1,154 connections",
+        "Epsilon-Greedy RL + Collaborative Filtering for smart personalization",
+        "5-agent n8n pipeline: Anomaly Detection → Delay Prediction → Route Optimization → Personalization → LLM Response Generation"
+      ],
+      "status": "featured",
+      "featured": true,
+      "github": "https://github.com/MRamya-sri",
+      "demo": null,
+      "image": "/images/ontimeLondon.png",
+      "emoji": "🚇"
+    },
+    {
+      "id": "nexusedu",
+      "title": "NexusEdu",
+      "subtitle": "AI-Powered Personalized Learning Platform",
+      "description": "A hackathon-winning intelligent tutoring system that adapts to each student's learning style. Uses multi-agent n8n workflows to deliver personalized educational content, gamified quizzes, and adaptive assessments.",
+      "tech": ["n8n", "OpenRouter", "Llama", "Supabase", "React", "GitHub Pages"],
+      "highlights": [
+        "Multi-agent workflow for adaptive learning paths",
+        "LLM-powered content generation tailored by grade level",
+        "Gamified quizzes with real-time feedback",
+        "Collaborative filtering for content recommendations"
+      ],
+      "status": "featured",
+      "featured": true,
+      "github": "https://github.com/MRamya-sri/nexusedu-learn",
+      "demo": null,
+      "image": "/images/nexusedu.png",
+      "emoji": "📚"
+    },
+    {
+      "id": "news-summarization",
+      "title": "News Article Summarization",
+      "subtitle": "NLP Text Summarization System",
+      "description": "ML-powered system that condenses lengthy news articles into informative summaries, saving time and keeping users updated on current events.",
+      "tech": ["Python", "NLP", "Transformers", "BERT"],
+      "highlights": [
+        "Abstractive summarization using transformer models",
+        "Evaluated on ROUGE metrics"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/NEWS-ARTICLE-TEXT-SUMMARIZATION",
+      "emoji": "📰"
+    },
+    {
+      "id": "breast-cancer",
+      "title": "Breast Cancer Survival Prediction",
+      "subtitle": "Healthcare ML Model",
+      "description": "Machine learning model predicting breast cancer patient survival, analyzing patient data for risk assessment to aid healthcare professionals in personalized treatment plans.",
+      "tech": ["Python", "Scikit-learn", "Pandas", "XGBoost"],
+      "highlights": [
+        "Patient risk assessment model",
+        "Feature importance analysis for medical insights"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/Breast-Cancer-Survival-Prediction",
+      "emoji": "🏥"
+    },
+    {
+      "id": "sentiment-analysis",
+      "title": "Sentiment Analysis",
+      "subtitle": "Israel-Palestine Conflict Reddit Analysis",
+      "description": "NLP project classifying Reddit comments on the Israel-Palestine conflict as positive, negative, or neutral — demonstrating sentiment analysis for controversial topics.",
+      "tech": ["Python", "NLP", "NLTK", "Reddit API"],
+      "highlights": [
+        "Multi-class sentiment classification",
+        "Reddit data scraping and preprocessing"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/Sentiment_Analysis-of-Isreal_Palestine-Reddit_Comments",
+      "emoji": "💬"
+    },
+    {
+      "id": "sms-spam",
+      "title": "SMS Spam Detection",
+      "subtitle": "Text Classification System",
+      "description": "System to automatically classify incoming SMS as legitimate or spam by analyzing text content and patterns, protecting users from phishing and promotional clutter.",
+      "tech": ["Python", "NLP", "Naive Bayes", "TF-IDF"],
+      "highlights": [
+        "Text preprocessing and feature extraction",
+        "High accuracy spam classification"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/Email_SMS-Spam-Classifier",
+      "emoji": "📱"
+    },
+    {
+      "id": "customer-churn",
+      "title": "Customer Churn Prediction",
+      "subtitle": "Business Intelligence ML",
+      "description": "Forecasting which customers are at risk of cancelling subscriptions by analyzing purchase history, support interactions, and engagement levels.",
+      "tech": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      "highlights": [
+        "Customer behavior pattern analysis",
+        "Retention strategy recommendations"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/Customer-Churn-Prediction",
+      "emoji": "📊"
+    },
+    {
+      "id": "fraud-detection",
+      "title": "Credit Card Fraud Detection",
+      "subtitle": "Anomaly Detection System",
+      "description": "Security system analyzing spending patterns to flag unusual transactions and prevent fraudulent credit card purchases.",
+      "tech": ["Python", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
+      "highlights": [
+        "Handled imbalanced dataset challenges",
+        "Real-time fraud flagging capability"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/credit-card-fraud-detection",
+      "emoji": "🔒"
+    },
+    {
+      "id": "hr-analytics",
+      "title": "HR Data Analysis",
+      "subtitle": "Power BI Dashboard",
+      "description": "Leveraging people data to generate insights for strategic workforce planning and talent management decisions with interactive visualizations.",
+      "tech": ["Power BI", "Excel", "DAX", "Data Modeling"],
+      "highlights": [
+        "Connected Power BI with Excel data sources",
+        "Interactive workforce analytics dashboard"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/HR-Data-Analytics",
+      "emoji": "👥"
+    },
+    {
+      "id": "whatsapp-analysis",
+      "title": "WhatsApp Chat Analysis",
+      "subtitle": "Communication Pattern Mining",
+      "description": "Uncovering hidden patterns in group chats using ML techniques to identify trends, frequent topics, and communication styles.",
+      "tech": ["Python", "NLP", "Pandas", "Matplotlib", "WordCloud"],
+      "highlights": [
+        "Group dynamics analysis",
+        "Topic modeling and trend detection"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/WhatsApp-Chat-Analysis",
+      "emoji": "💭"
+    },
+    {
+      "id": "covid-analysis",
+      "title": "Covid-19 Analysis",
+      "subtitle": "Interactive Power BI Dashboard",
+      "description": "Interactive dashboard visualizing global Covid-19 data, revealing trends in cases, deaths, and vaccinations to inform public health strategies.",
+      "tech": ["Power BI", "DAX", "Data Visualization"],
+      "highlights": [
+        "Global pandemic data visualization",
+        "Trend analysis and forecasting"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri/Covid19-Analysis",
+      "emoji": "🦠"
+    },
+    {
+      "id": "smart-health",
+      "title": "Smart Health Monitoring",
+      "subtitle": "AIoT Health System",
+      "description": "Real-time health monitoring using ESP32-S3 microcontroller with AI-powered anomaly detection for vital signs.",
+      "tech": ["ESP32-S3", "Wokwi", "Python", "IoT", "Sensors"],
+      "highlights": [
+        "Simulated in Wokwi environment",
+        "Real-time vital signs monitoring"
+      ],
+      "status": "completed",
+      "featured": false,
+      "github": "https://github.com/MRamya-sri",
+      "emoji": "❤️"
+    }
+  ],
+  "education": [
+  {
+    "degree": "MSc Artificial Intelligence",
+    "institution": "Northumbria University London",
+    "period": "May 2025 - Current",
+    "score": "In Progress",
+    "type": "masters",
+    "icon": "🎓"
+  },
+  {
+    "degree": "B.Tech in Data Science",
+    "institution": "Siddhartha Institute of Technology and Sciences",
+    "period": "Sep 2020 - Jun 2024",
+    "score": "CGPA 7.81",
+    "type": "bachelors",
+    "icon": "🎓"
+  },
+  {
+    "degree": "Intermediate (MPC)",
+    "institution": "Sri Gayatri Junior College",
+    "period": "Jun 2018 - Mar 2020",
+    "score": "82%",
+    "type": "intermediate",
+    "icon": "📚"
+  },
+  {
+    "degree": "SSC (10th Standard)",
+    "institution": "Konark High School",
+    "period": "Jun 2017 - Apr 2018",
+    "score": "CGPA 8.8",
+    "type": "school",
+    "icon": "🏫"
+  }
+],
+"certifications": [
+  {
+    "name": "Python for Data Science & AI",
+    "issuer": "IBM",
+    "platform": "Coursera",
+    "year": "2023",
+    "image": "https://drive.google.com/file/d/1gHIKXjdUpph49CypbWyUy0YQdscRtXtq/preview",
+    "color": "blue"
+  },
+  {
+    "name": "Predictive Analytics",
+    "issuer": "Great Learning Academy",
+    "platform": "Great Learning",
+    "year": "2023",
+    "image": "https://drive.google.com/file/d/1F8jDNKjO-mDu4bV0gSaL_XO2JNqCHgjO/preview",
+    "color": "green"
+  },
+  {
+    "name": "Machine Learning Internship",
+    "issuer": "Acmegrade",
+    "platform": "Acmegrade",
+    "year": "2023",
+    "image": "https://drive.google.com/file/d/1Es9PHzHXAyjpSprRug9uj9Ky03RLsNgR/preview",
+    "color": "purple"
+  },
+  {
+    "name": "Full Stack Developer",
+    "issuer": "Certification Course",
+    "platform": "Online",
+    "year": "2023",
+    "image": "https://drive.google.com/file/d/1TYruHWTKIgf3dzrNh0lcpzFrDaJslow2/preview",
+    "color": "orange"
+  }
+]
+}
