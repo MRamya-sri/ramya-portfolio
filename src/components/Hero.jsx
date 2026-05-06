@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaRobot } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaRobot, FaBook } from 'react-icons/fa'
 import { HiSparkles } from 'react-icons/hi'
 
 function Hero({ data }) {
@@ -67,6 +67,9 @@ function Hero({ data }) {
           </a>
           <a href={`mailto:${data.email}`} className="group p-2.5 md:p-3 bg-white/5 hover:bg-green-500/20 border border-white/10 hover:border-green-500/50 rounded-xl transition-all duration-300">
             <FaEnvelope className="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-green-400 transition-colors" />
+          </a>
+          <a href="https://my-study-tracker-eight.vercel.app/" target="_blank" rel="noopener noreferrer" className="group p-2.5 md:p-3 bg-white/5 hover:bg-orange-500/20 border border-white/10 hover:border-orange-500/50 rounded-xl transition-all duration-300">
+            <FaBook className="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-orange-400 transition-colors" />
           </a>
         </motion.div>
 
