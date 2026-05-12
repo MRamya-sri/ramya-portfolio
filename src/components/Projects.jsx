@@ -92,7 +92,7 @@ function OnTimeLondonCard({ project }) {
                   <FaGithub className="w-4 h-4" />
                   View Code
                 </a>
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-violet-500/20 hover:bg-violet-500/40 border border-violet-400/30 text-violet-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <a href={project.research} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-violet-500/20 hover:bg-violet-500/40 border border-violet-400/30 text-violet-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
                   📄 Research
                 </a>
               </div>
