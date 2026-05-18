@@ -10,6 +10,7 @@ import Education from './components/Education'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import Certifications from './components/Certifications'
+import ChatWidget from './components/ChatWidget'
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
         <Certifications data={content.certifications} />
         <Contact data={content.personal} />
       </div>
+
+      <ChatWidget />
     </div>
   )
 }
