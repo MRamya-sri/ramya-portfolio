@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Send, X } from 'lucide-react'
 
 const WEBHOOK_URL = 'https://n8n.ramya23.codes/webhook/portfolio-chat'
+const ERROR_REPLY =
+  "Sorry, I couldn't reach Ramya's AI agent right now. Please try again in a moment."
 const easeOutExpo = [0.16, 1, 0.3, 1]
 
 const popupMessages = [
@@ -20,6 +22,45 @@ const initialMessages = [
       "Hi! I'm Ramya's AI assistant ✨ Ask me anything about her experience, projects, or how she builds things.",
   },
 ]
+
+function createSessionId() {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID()
+  }
+
+  return `portfolio-${Date.now()}-${Math.random().toString(16).slice(2)}`
+}
+
+async function parseWebhookReply(response) {
+  const contentType = response.headers.get('content-type') || ''
+  const responseText = await response.text()
+
+  if (!response.ok) {
+    throw new Error(`Webhook request failed with status ${response.status}`)
+  }
+
+  if (!responseText.trim()) {
+    return ''
+  }
+
+  if (!contentType.includes('application/json')) {
+    return responseText.trim()
+  }
+
+  const data = JSON.parse(responseText)
+  const payload = Array.isArray(data) ? data[0] : data
+  const reply =
+    payload?.output ??
+    payload?.response ??
+    payload?.text ??
+    payload?.message ??
+    payload?.answer ??
+    payload?.data?.output ??
+    payload?.data?.response ??
+    payload?.data?.text
+
+  return typeof reply === 'string' ? reply.trim() : ''
+}
 
 function TypingIndicator() {
   return (
@@ -154,6 +195,7 @@ function ChatWidget() {
   )
   const messagesEndRef = useRef(null)
   const inputRef = useRef(null)
+  const sessionIdRef = useRef(createSessionId())
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 639px)')
@@ -238,18 +280,15 @@ function ChatWidget() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: trimmedInput }),
+        body: JSON.stringify({
+          message: trimmedInput,
+          chatInput: trimmedInput,
+          sessionId: sessionIdRef.current,
+          source: 'ramya-portfolio',
+        }),
       })
 
-      if (!response.ok) {
-        throw new Error('Request failed')
-      }
-
-      const data = await response.json()
-      const reply =
-        typeof data?.output === 'string' && data.output.trim()
-          ? data.output
-          : 'Sorry, something went wrong. Please try again.'
+      const reply = (await parseWebhookReply(response)) || ERROR_REPLY
 
       setMessages((currentMessages) => [
         ...currentMessages,
@@ -260,7 +299,7 @@ function ChatWidget() {
         ...currentMessages,
         {
           role: 'assistant',
-          content: 'Sorry, something went wrong. Please try again.',
+          content: ERROR_REPLY,
         },
       ])
     } finally {
